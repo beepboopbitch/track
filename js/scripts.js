@@ -6,16 +6,24 @@ $(document).ready(function() {
     var q4 = $("select#q4").val();
     var q5 = $("select#q5").val();
 
-    var answer = 0;
+    var answer = null;
 
     if (q1 === 'backend' && q2 === 'small' && q3 === 'videoy') {
       answer = 'java';
-    } else if (q1 === 'backend' && q2 === 'big' q3 === 'videon') {
+    } else if (q1 === 'backend' && q2 === 'big' && q3 === 'videon') {
       answer = 'php';
-    } else if (q1 === 'frontend' && q2 ==='small' q3 === 'videon') {
+    } else if (q1 === 'frontend' && q2 ==='small' && q3 === 'videon') {
       answer = 'ruby';
-    } else if (q1 === 'frontend' && q2 ==='big' q3 === 'videoy') {
+    } else if (q1 === 'frontend' && q2 ==='big' && q3 === 'videoy') {
       answer = 'C#';
+    } else if (q1 === 'backend' && q2 === 'small' && q3 === 'videon') {
+      answer = 'java or php'
+    } else if (q1 === 'backend' && q2 === 'big' && q3 === 'videoy') {
+      answer = 'php or java';
+    } else if (q1 === 'frontend' && q2 === 'small' && q3 === 'videoy') {
+      answer = 'ruby or java';
+    } else if (q1 === 'frontend' && q2 === 'big' && q3 === 'videon') {
+      answer = 'C# or ruby';
     }
 
     $("#suggest").text(answer);
