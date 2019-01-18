@@ -10,69 +10,56 @@
   <body>
 
     <div class="container">
-
-
-
-
-
       <div class="panel panel">
         <div class="main">
           <h1>What Language Is For Me?</h1>
 
           <p class="mainn">Answer these five questions to find out:</p>
 
-          <form id="tracks">
-
-            <div class="img">
-              <ol>
-                <li><label for="q1">Which end would you prefer to work in?</label>
-                <select class="form-control" id="q1">
-                  <option value="frontend">frontend</option>
-                  <option value="backend">backend</option>
-                </select></li>
-                <li><label for="q2">What size of company do you want to work for?</label>
-                <select class="form-control" id="q2">
-                  <option value="big">big</option>
-                  <option value="small">small</option>
-                </select></li>
-                <li><label for="q3">Do you want to build videogames?</label>
-                <select class="form-control" id="q3">
-                  <option value="videoy">yes</option>
-                  <option value="videon">no</option>
-                </select></li>
-                <li><label for="q4">Do you want to build websites?</label>
-                <select class="form-control" id="q4">
-                  <option value="weby">yes</option>
-                  <option value="webn">no</option>
-                </select></li>
-                <li><label for="q5">Do you want to build applications?</label>
-                <select class="form-control" id="q5">
-                  <option value="appy">yes</option>
-                  <option value="appn">no</option>
-                </select></li>
-              </ol>
+          <form id="blanks">
+            <div class="name">
+              <label for="name">Enter name:</label>
+              <input id="name" class="form-control" type="text">
             </div>
+          </form>
 
-            <img src="img/code.jpeg" alt="a pic of code">
-
-
-
-
-
-
+          <form id="tracks">
+            <ol>
+              <li><label for="q1">Which end would you prefer to work in?</label>
+              <select class= "form-control" id="q1">
+                <option value="frontend">frontend</option>
+                <option value="backend">backend</option>
+              </select></li>
+              <li><label for="q2">What size of company do you want to work for?</label>
+              <select class= "form-control" id="q2">
+                <option value="big">big</option>
+                <option value="small">small</option>
+              </select></li>
+              <li><label for="q3">Do you want to build videogames?</label>
+              <select class= "form-control" id="q3">
+                <option value="videoy">yes</option>
+                <option value="videon">no</option>
+              </select></li>
+              <li><label for="q4">Do you want to build websites?</label>
+              <select class= "form-control" id="q4">
+                <option value="weby">yes</option>
+                <option value="webn">no</option>
+              </select></li>
+              <li><label for="q5">Do you want to build applications?</label>
+              <select class= "form-control" id="q5">
+                <option value="appy">yes</option>
+                <option value="appn">no</option>
+              </select></li>
+            </ol>
             <div class="button">
               <button type="submit" class="btn">What should I choose?</button>
             </div>
           </form>
         </div>
       </div>
-
-
       <div id="answer">
-        <p>Based on your choices <span id="suggest"></span> seems to match your interest most.</p>
+        <p><span class="name"></span>based on your choices <span id="suggest"></span> seems to match your interest most.</p>
       </div>
-
     </div>
-
   </body>
 </html>

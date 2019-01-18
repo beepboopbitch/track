@@ -18,9 +18,23 @@ $(document).ready(function() {
       answer = 'C#';
     }
 
-
     $("#suggest").text(answer);
     $("#answer").show();
+    event.preventDefault();
+  });
+});
+
+$(document).ready(function() {
+  $("#blanks").submit(function(event) {
+    var blanks = ["name"];
+
+    blanks.forEach(function(blank) {
+      var userInput = $("input." + blank).val();
+      $("." + blank).text(userInput).val();
+    });
+
+    $("#answer").show();
+
     event.preventDefault();
   });
 });
