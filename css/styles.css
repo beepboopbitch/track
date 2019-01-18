@@ -1,8 +1,36 @@
+.main {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #E80068;
+}
+
+.mainn {
+  font-weight: bold;
+}
+
+.button {
+  padding-top: 20px;
+}
+
 .btn {
   display: block;
-  background-color: red;
+}
+
+img {
+  float: right;
+}
+
+.img {
+  padding-right: 500px;
 }
 
 #answer {
   display: none;
+}
+
+#answer,.p {
+  font-weight: bold;
+  text-align: center;
 }
