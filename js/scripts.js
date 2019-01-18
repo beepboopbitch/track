@@ -25,7 +25,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  $("#blanks").submit(function(event) {
+  $("form#blanks").submit(function(event) {
     var blanks = ["name"];
 
     blanks.forEach(function(blank) {
@@ -34,7 +34,7 @@ $(document).ready(function() {
     });
 
     $("#answer").show();
-
+    alert('work')
     event.preventDefault();
   });
 });
