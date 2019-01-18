@@ -7,9 +7,17 @@ $(document).ready(function() {
     var q5 = $("select#q5").val();
 
     var answer = 0;
-    if (q1 === 'frontend') {
+
+    if (q1 === 'backend' && q2 === 'small') {
       answer = 'java';
+    } else if (q1 === 'backend' && q2 === 'big') {
+      answer = 'php';
+    } else if (q1 === 'frontend' && q2 ==='small') {
+      answer = 'ruby';
+    } else if (q1 === 'frontend' && q2 ==='big') {
+      answer = 'C#';
     }
+
 
     $("#suggest").text(answer);
     $("#answer").show();
