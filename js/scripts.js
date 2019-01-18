@@ -6,16 +6,13 @@ $(document).ready(function() {
     var q4 = $("select#q4").val();
     var q5 = $("select#q5").val();
 
-    var answer = 100;
+    var answer = 0;
     if (q1 === 'frontend') {
-      answer += 50;
+      answer = 'java';
     }
 
-
-
     $("#suggest").text(answer);
-    
-
+    $("#answer").show();
     event.preventDefault();
   });
 });
