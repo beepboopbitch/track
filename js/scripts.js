@@ -1,5 +1,8 @@
 $(document).ready(function() {
-  $(form#tracks).submit(function(event) {
+  $("#print").submit(function(event) {
+    event.preventDefault();
+    var result = $("select#q1").val();
 
-  }
+    $("#output").text(result);
+  });
 });
