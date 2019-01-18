@@ -8,13 +8,13 @@ $(document).ready(function() {
 
     var answer = 0;
 
-    if (q1 === 'backend' && q2 === 'small') {
+    if (q1 === 'backend' && q2 === 'small' && q3 === 'videoy') {
       answer = 'java';
-    } else if (q1 === 'backend' && q2 === 'big') {
+    } else if (q1 === 'backend' && q2 === 'big' q3 === 'videon') {
       answer = 'php';
-    } else if (q1 === 'frontend' && q2 ==='small') {
+    } else if (q1 === 'frontend' && q2 ==='small' q3 === 'videon') {
       answer = 'ruby';
-    } else if (q1 === 'frontend' && q2 ==='big') {
+    } else if (q1 === 'frontend' && q2 ==='big' q3 === 'videoy') {
       answer = 'C#';
     }
 

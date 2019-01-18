@@ -12,7 +12,7 @@ _A multiple choice quiz designed to suggest a coding language or epicodus track 
 
 * _Clone this repository_ https://github.com/nayomi-morita/track.git
 * _Open index.html in browser_
-* _To modify open in your chosen code editor, I personally used atom._
+* _To modify open in your chosen code editor, I personally used atom_
 
 ## Technologies Used
 
